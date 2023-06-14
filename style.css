@@ -91,10 +91,10 @@ html, body {
 
 #table-content {
     display: grid;
-    /*para desktop: minmax 300px, para mobile: minmax 400px*/
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 150px;
-    max-width: 800px;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    margin: 30px;
 }
 
 #button2 {
@@ -273,7 +273,13 @@ html, body {
 
 
 @media (max-width: 966px) {
-    #table-content {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    .item{
+      margin: 1px;
     }
+
+    .item > img{
+        width: 100px;
+    }
+    
 }
